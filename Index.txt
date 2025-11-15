@@ -1,0 +1,190 @@
+Index.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomPrints Hub - Personalize Your Gear</title>
+    <style>
+        /* Basic Reset & Global Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { background: #2c3e50; color: white; padding: 1rem 0; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav ul { display: flex; list-style: none; }
+        nav li { margin-left: 2rem; }
+        nav a { color: white; text-decoration: none; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(to right, #3498db, #2980b9); color: white; text-align: center; padding: 4rem 0; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .btn { background: #e74c3c; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; display: inline-block; }
+        
+        /* Products Section */
+        .products { padding: 3rem 0; }
+        .products h2 { text-align: center; margin-bottom: 2rem; font-size: 2.5rem; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .product-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .product-card img { width: 100%; height: 200px; object-fit: cover; }
+        .product-card h3 { padding: 1rem; font-size: 1.3rem; }
+        .product-card p { padding: 0 1rem 1rem; }
+        
+        /* Pricing Section */
+        .pricing { background: #ecf0f1; padding: 3rem 0; text-align: center; }
+        .pricing h2 { margin-bottom: 2rem; font-size: 2.5rem; }
+        .price-tier { display: inline-block; margin: 1rem; padding: 1rem; background: white; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        
+        /* Customization Form */
+        .customize { padding: 3rem 0; }
+        .customize h2 { text-align: center; margin-bottom: 2rem; }
+        form { max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        form label { display: block; margin: 0.5rem 0 0.2rem; font-weight: bold; }
+        form input, form select, form textarea { width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px; }
+        form button { background: #27ae60; color: white; padding: 1rem; border: none; border-radius: 5px; cursor: pointer; width: 100%; font-size: 1.1rem; }
+        
+        /* Footer */
+        footer { background: #2c3e50; color: white; text-align: center; padding: 1rem 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } nav ul { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CustomPrints Hub</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#customize">Customize</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Design Your Dream Wear</h1>
+            <p>Custom prints on T-shirts, hoodies, hats, mugs & more. Bring your ideas to life—or let us create one for you!</p>
+            <a href="#customize" class="btn">Start Customizing</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our In-House Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="250x200?text=T-Shirt" alt="T-Shirt">
+                    <h3>Classic T-Shirt</h3>
+                    <p>Soft cotton tee, ready for your custom print. Buy blank or design now.</p>
+                </div>
+                <div class="product-card">
+                    <img src="250x200?text=Hoodie" alt="Hoodie">
+                    <h3>Cozy Hoodie</h3>
+                    <p>Warm fleece hoodie—perfect for all-season style with your vibe.</p>
+                </div>
+                <div class="product-card">
+                    <img src="250x200?text=Hat" alt="Hat">
+                    <h3>Trucker Hat</h3>
+                    <p>Adjustable cap for that custom snapback look.</p>
+                </div>
+                <div class="product-card">
+                    <img src="250x200?text=Coffee+Mug" alt="Coffee Mug">
+                    <h3>Ceramic Mug</h3>
+                    <p>11oz mug to sip your way—print your motto or meme.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; font-style: italic;">Don't see what you need? Send us your own clothing or accessory for printing!</p>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Simple, Flat Pricing</h2>
+            <div class="price-tier">
+                <h3>Clothing Prints</h3>
+                <p>T-Shirts, Hoodies, Socks & More</p>
+                <strong>$15 per design</strong>
+            </div>
+            <div class="price-tier">
+                <h3>Accessory Prints</h3>
+                <p>Hats, Coffee Mugs & Small Items</p>
+                <strong>$10 per design</strong>
+            </div>
+            <p style="margin-top: 1rem;">No hidden fees—shipping extra. Bulk discounts for 5+ items!</p>
+        </div>
+    </section>
+
+    <section id="customize" class="customize">
+        <div class="container">
+            <h2>Customize Your Order</h2>
+            <form id="customForm">
+                <label for="item">Select Item (or describe your own):</label>
+                <select id="item" required>
+                    <option value="">Choose...</option>
+                    <option value="tshirt">T-Shirt ($15/print)</option>
+                    <option value="hoodie">Hoodie ($15/print)</option>
+                    <option value="hat">Hat ($10/print)</option>
+                    <option value="mug">Coffee Mug ($10/print)</option>
+                    <option value="other">My Own Item</option>
+                </select>
+
+                <label for="designType">Design Type:</label>
+                <select id="designType" required>
+                    <option value="">Choose...</option>
+                    <option value="own">Upload My Design</option>
+                    <option value="custom">Create Custom Design for Me</option>
+                </select>
+
+                <label for="description">Describe Your Design (or upload notes):</label>
+                <textarea id="description" rows="4" placeholder="E.g., 'A fierce wolf under starry skies' or attach file details..." required></textarea>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" value="1" required>
+
+                <label for="ownItem">If sending your own item, details:</label>
+                <input type="text" id="ownItem" placeholder="E.g., 'Vintage jacket, size M'">
+
+                <button type="submit">Get Quote & Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 CustomPrints Hub. Ready to print? Email: hello@customprintshub.com | Uploads via form above.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form handler for quote (in real site, connect to backend/email)
+        document.getElementById('customForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const item = document.getElementById('item').value;
+            const designType = document.getElementById('designType').value;
+            const quantity = document.getElementById('quantity').value;
+            let pricePer = (item === 'hat' || item === 'mug') ? 10 : 15;
+            const total = pricePer * quantity;
+            alert(`Thanks! For ${quantity} ${item}s with ${designType} design: $${total} (plus shipping). We'll email details to confirm upload/creation.`);
+            // In production: Send to server or email service
+        });
+
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
